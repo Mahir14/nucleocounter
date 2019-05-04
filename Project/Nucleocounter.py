@@ -3,13 +3,10 @@ from tkinter import *
 from tkinter import filedialog
 from datetime import datetime
 import time
-from Bio import SeqIO
 
 x = Tk()
 x.title("Nucleocounter")
 x.iconbitmap('logo_6Pr_icon.ico')
-
-AminoAcids = {"TTT":"Phenylalanine","TTC":"Phenylalanine","TTA":"Leucine","TTG":"Leucine","CTT":"Leucine","CTA":"Leucine","CTG":"Leucine","CTC":"Leucine","ATT":"Isoleucine","ATC":"Isoleucine","ATA":"Isoleucine","ATG":"Methionine","GTT":"Valine","GTC":"Valine","GTA":"Valine","GTG":"Valine","TCT":"Serine","TCC":"Serine","TCA":"Serine","TCG":"Serine","CCT":"Proline","CCC":"Proline","CCA":"Proline","CCG":"Proline","ACT":"Threonine","ACC":"Threonine","ACA":"Threonine","ACG":"Threonine","GCT":"Alanine","GCC":"Alanine","GCA":"Alanine","GCG":"Alanine","TAT":"Tyrosine","TAC":"Tyrosine","TAA":"Stop","TAG":"Stop","TGA":"Stop","CAT":"Histidine","CAC":"Histidine","CAA":"Glutamine","CAG":"Glutamine","AAT":"Asparagine","AAC":"Asparagine","AAA":"Lysine","AAG":"Lysine","GAT":"Aspartic Acid","GAC":"Aspartic Acid","TGT":"Cytesine","TGC":"Cytesine","TGG":"Tryptophan","CGT":"Arginine","CGC":"Arginine","CGA":"Arginine","CGG":"Arginine","AGT":"Serine","AGG":"Serine","GGT":"Glycine","GGC":"Glycine","GGA":"Glycine","GGG":"Glycine",}
 
 def debugLog(t):
     global OUTPUT
